@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+		<table cellpadding="10" cellspacing="10">
+		<tr>
+			<th>
+				<img src="pic1.png" alt="">
+			</th>
+			<th>
+				<button onclick="document.getElementById('first').innerHTML=cat2.say();">cat2.say call</button>
+				<p id="first"></p>
+
+			</th>
+		</tr>
+		<tr>
+			<th>
+				<img src="pic2.png" alt="">
+			</th>
+			<th>
+				<button onclick="document.getElementById('second').innerHTML=chicken.say();">chicken.say call</button>
+				<p id="second"></p>
+			</th>
+		</tr>
+	</table>
+	<script>
+	function speak(){
+		return this.sound+"! My name is "+this.name +"!"	
+	}
+	var cat={
+		"legs":4,
+		"name":"Tom",
+		"color":"pale blue",
+		"isHappy":false
+	};
+	var cat1={
+		"legs" :2,
+		"name":"Tom",
+		"color":"red",
+		"catHasGotJerry":true
+	};
+	var cat2={
+	"legs": 4,
+	 "name": "Silvester",
+	 "color": "black and white", 
+	 "isHappy": false, 
+	 "sound": "Meow", 
+	 "say": speak 
+	};
+	var mouse={
+	"legs": 2,
+	"name": "jerry",
+	"color": "brown", 
+	"isHappy": false, 
+	"sound": "sqick", 
+	"say": speak 
+	};
+	var horse={
+	legs: 4,
+	name: "asb",
+	color: "black", 
+	isHappy: false, 
+	sound: "ghooor ghooooor", 
+	say: speak
+	};
+	var chicken={
+	legs: 2,
+	name: "chicken",
+	color: "black", 
+	isHappy: false, 
+	sound: "chik chik", 
+	say: speak
+	};
+	
+	
+	</script>
+</body>
+</html>
